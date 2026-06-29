@@ -13,8 +13,11 @@ function Logo() {
     <span className="nav-logo" aria-label="Mediterranean Mining Solutions">
       <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden>
         <rect x="0.6" y="0.6" width="24.8" height="24.8" rx="1.6" stroke="currentColor" strokeWidth="1.2" />
-        <path d="M5 19 L9.5 7 L13 15 L16.5 7 L21 19" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" fill="none" />
-        <circle cx="13" cy="15" r="1.1" fill="var(--accent)" />
+        {/* Outer legs of the M in ink */}
+        <path d="M5 19 L9.5 7" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" strokeLinecap="round" fill="none" />
+        <path d="M16.5 7 L21 19" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" strokeLinecap="round" fill="none" />
+        {/* Inner V at the top in terracotta accent */}
+        <path d="M9.5 7 L13 15 L16.5 7" stroke="var(--accent)" strokeWidth="1.9" strokeLinejoin="round" strokeLinecap="round" fill="none" />
       </svg>
       <span className="nav-logo-text">
         MMS<span className="nav-logo-sub">/ SILICA</span>
