@@ -23,13 +23,13 @@ const HERO_SLIDES: HeroSlide[] = [
   {
     img: IMG.glassFurnace,
     alt: "Molten glass glowing amber on a working rod inside an industrial furnace, the high-purity silica feedstock at melt temperature.",
-    headline: "The silica behind\nclearer, stronger glass.",
+    headline: "The clarity behind\nstronger glass.",
     sub: "MMS supplies 99.65% SiO₂ sand with iron oxide held below 0.012% — the consistency a float line, container plant or foundry needs, lot after lot, backed by an auditable Certificate of Analysis.",
   },
   {
-    img: IMG.glassMelt,
-    alt: "A glassworker drawing a glowing gather of molten glass from the furnace in a dark workshop.",
-    headline: "Feedstock that melts\npredictably, batch after batch.",
+    img: IMG.glassHeating,
+    alt: "A gather of glass heating to a glowing orange inside the mouth of an industrial furnace.",
+    headline: "Predictable melts,\nbatch after batch.",
     sub: "A tight grain band and ultra-low iron mean a stable melt, true colour and fewer rejects — the difference between a good pour and a scrapped one.",
   },
   {

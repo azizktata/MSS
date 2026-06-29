@@ -358,7 +358,13 @@ body {
 .hero-dot:hover { background: oklch(96% 0.01 75 / 0.55); }
 .hero-dot:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .hero-dot[data-active="true"] { background: var(--accent); width: 2.75rem; }
-@media (max-width: 720px) { .hero-arrow { width: 2.4rem; height: 2.4rem; } }
+/* On phones the edge arrows fall on top of the CTAs and the taller 2-row stat
+   strip rises into the dots — hide the arrows (dots + swipe remain) and lift
+   the dots clear of the strip. */
+@media (max-width: 720px) {
+  .hero-arrow { display: none; }
+  .hero-dots { bottom: clamp(13rem, 26vh, 15rem); }
+}
 
 /* ============================================================
    VARIANT /3 — MATERIAL MONOLITH (premium lab/origin, bright, geometric)
