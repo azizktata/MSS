@@ -94,7 +94,7 @@ export default function VariantTwo({ activePath }: { activePath?: string } = {})
       {/* CHEMISTRY — ported from v3, faceless lab photos */}
       <section id="chemistry" className="section-pad" style={{ background: "var(--bg-2)" }}>
         <div className="shell grid lg:grid-cols-12 gap-12 items-start">
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 min-w-0">
             <div className="eyebrow">II · The Chemistry</div>
             <h2 className="display mt-4" style={{ fontSize: "clamp(1.9rem, 3vw, 2.7rem)" }}>
               Verified by spectrometry, lot after lot.
@@ -111,7 +111,7 @@ export default function VariantTwo({ activePath }: { activePath?: string } = {})
               </div>
             </div>
           </div>
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 min-w-0">
             <div style={{ background: "var(--bg)", border: "1px solid var(--line)", borderRadius: "var(--radius)", padding: "clamp(1.25rem, 2.5vw, 2rem)" }}>
               <div className="eyebrow mb-4">Chemical composition · certified assay</div>
               <div className="scroll-x">
