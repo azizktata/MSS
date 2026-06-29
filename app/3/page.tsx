@@ -31,7 +31,7 @@ export default function V3() {
           <div className="absolute inset-0 flex items-end">
             <div className="shell w-full" style={{ paddingBottom: "clamp(9rem, 20vh, 13rem)" }}>
               <div className="rise" style={{ maxWidth: 880 }}>
-                <div className="label-wide" style={{ color: "oklch(86% 0.02 60)" }}>High-Purity Mediterranean Quartz · Origin Series</div>
+                {/* <div className="label-wide" style={{ color: "oklch(86% 0.02 60)" }}>High-Purity Mediterranean Quartz · Origin Series</div> */}
                 <h1 className="display mt-5" style={{ color: "oklch(99% 0.01 75)", fontSize: "clamp(2.6rem, 6vw, 5.2rem)", lineHeight: 0.98 }}>
                   Purity you can put under a microscope.
                 </h1>

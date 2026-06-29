@@ -145,6 +145,14 @@ body {
 .spec td.k { font-family: var(--font-num); color: var(--ink-soft); font-size: 0.82rem; }
 .spec td.v { font-family: var(--font-num); color: var(--ink); font-weight: 600; }
 .spec tr:hover td { background: var(--bg-2); }
+/* On phones, shrink the spec tables so all columns fit the card without a
+   horizontal scroll (tighter font + cell padding). */
+@media (max-width: 720px) {
+  .spec { font-size: 0.76rem; }
+  .spec th { font-size: 0.58rem; letter-spacing: 0.06em; padding: 0.5rem 0.35rem; }
+  .spec td { padding: 0.6rem 0.35rem; }
+  .spec td.k { font-size: 0.7rem; }
+}
 
 /* form fields */
 .field {
@@ -339,6 +347,11 @@ body {
 /* on wide screens leave room for the edge arrows beside the copy */
 @media (min-width: 1024px) {
   .hero-copy .shell { padding-inline: clamp(4.5rem, 6vw, 6rem); }
+}
+/* On phones the copy is vertically centred in a short viewport; reserve space at
+   the top so a tall slide's headline can't ride up under the fixed nav bar. */
+@media (max-width: 720px) {
+  .hero-copy { padding-top: 5rem; }
 }
 .hero-arrow:hover { background: oklch(20% 0.02 200 / 0.55); border-color: oklch(96% 0.01 75 / 0.65); }
 .hero-arrow:active { transform: translateY(-50%) scale(0.94); }
