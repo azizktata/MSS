@@ -26,8 +26,10 @@ function Logo() {
   );
 }
 
-export default function SiteNav({ items }: { items: NavItem[] }) {
+export default function SiteNav({ items, activePath }: { items: NavItem[]; activePath?: string }) {
   const pathname = usePathname();
+  // `activePath` lets a route (e.g. "/") declare which variant it represents.
+  const current = activePath ?? pathname;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -57,7 +59,7 @@ export default function SiteNav({ items }: { items: NavItem[] }) {
           {/* variant switcher kept compact */}
           <div className="nav-variants" role="navigation" aria-label="Design variant">
             {VARIANTS.map((v) => (
-              <Link key={v.id} href={v.path} className="nav-variant" data-active={pathname === v.path}>
+              <Link key={v.id} href={v.path} className="nav-variant" data-active={current === v.path}>
                 /{v.id}
               </Link>
             ))}
